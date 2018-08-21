@@ -8,6 +8,14 @@
 
 import UIKit
 
+protocol GNavigationVMProtocol {
+	func open(vc: GBaseView)
+	func close(toRoot: Bool)
+	func closeToVC(_ vc: GBaseView)
+}
+
 class GNavigationVM: GBaseViewModel {
 
 }
+
+

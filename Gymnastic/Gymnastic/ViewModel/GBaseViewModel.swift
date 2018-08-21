@@ -9,5 +9,9 @@
 import UIKit
 
 class GBaseViewModel: NSObject {
-
+	weak var ownerView: GBaseView?
+	
+	init(_ ownerView: GBaseView){
+		self.ownerView = ownerView
+	}
 }

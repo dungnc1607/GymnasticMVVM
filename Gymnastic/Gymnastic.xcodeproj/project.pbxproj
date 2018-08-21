@@ -7,21 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91D09BC06704464A66CAA87F /* Pods_Gymnastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F1499FAFF56A7626CE579E /* Pods_Gymnastic.framework */; };
 		FED7BA7E212C0A8C00DB9523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BA7D212C0A8C00DB9523 /* AppDelegate.swift */; };
-		FED7BA80212C0A8C00DB9523 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BA7F212C0A8C00DB9523 /* ViewController.swift */; };
-		FED7BA83212C0A8C00DB9523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED7BA81212C0A8C00DB9523 /* Main.storyboard */; };
 		FED7BA85212C0A8E00DB9523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED7BA84212C0A8E00DB9523 /* Assets.xcassets */; };
 		FED7BA88212C0A8E00DB9523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED7BA86212C0A8E00DB9523 /* LaunchScreen.storyboard */; };
+		FED7BA93212C18F500DB9523 /* GBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BA92212C18F500DB9523 /* GBaseView.swift */; };
+		FED7BA95212C190800DB9523 /* GBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BA94212C190800DB9523 /* GBaseViewModel.swift */; };
+		FED7BA97212C191700DB9523 /* GBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BA96212C191700DB9523 /* GBaseModel.swift */; };
+		FED7BA99212C199300DB9523 /* GNavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BA98212C199300DB9523 /* GNavigationVM.swift */; };
+		FED7BA9D212C1A1F00DB9523 /* GIntrodutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BA9B212C1A1F00DB9523 /* GIntrodutionView.swift */; };
+		FED7BA9E212C1A1F00DB9523 /* GIntrodutionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED7BA9C212C1A1F00DB9523 /* GIntrodutionView.xib */; };
+		FED7BAAC212C1AAE00DB9523 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA0212C1AAE00DB9523 /* UIView.swift */; };
+		FED7BAAD212C1AAE00DB9523 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA1212C1AAE00DB9523 /* Collection.swift */; };
+		FED7BAAE212C1AAE00DB9523 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA2212C1AAE00DB9523 /* UIColor.swift */; };
+		FED7BAAF212C1AAE00DB9523 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA3212C1AAE00DB9523 /* UITableViewExtension.swift */; };
+		FED7BAB0212C1AAE00DB9523 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA4212C1AAE00DB9523 /* NSObject.swift */; };
+		FED7BAB1212C1AAE00DB9523 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA5212C1AAE00DB9523 /* UITextField.swift */; };
+		FED7BAB2212C1AAE00DB9523 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA6212C1AAE00DB9523 /* UIViewExtensions.swift */; };
+		FED7BAB3212C1AAE00DB9523 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA7212C1AAE00DB9523 /* String.swift */; };
+		FED7BAB4212C1AAE00DB9523 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA8212C1AAE00DB9523 /* UIImage.swift */; };
+		FED7BAB5212C1AAE00DB9523 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAA9212C1AAE00DB9523 /* UIViewController.swift */; };
+		FED7BAB6212C1AAE00DB9523 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAAA212C1AAE00DB9523 /* UIImageView.swift */; };
+		FED7BAB7212C1AAE00DB9523 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BAAB212C1AAE00DB9523 /* UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22145EC71109275F6348C1A3 /* Pods-Gymnastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic.release.xcconfig"; sourceTree = "<group>"; };
+		D28E17BC473277081BED33CD /* Pods-Gymnastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic.debug.xcconfig"; sourceTree = "<group>"; };
+		D5F1499FAFF56A7626CE579E /* Pods_Gymnastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gymnastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED7BA7A212C0A8C00DB9523 /* Gymnastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gymnastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED7BA7D212C0A8C00DB9523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FED7BA7F212C0A8C00DB9523 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FED7BA82212C0A8C00DB9523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FED7BA84212C0A8E00DB9523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FED7BA87212C0A8E00DB9523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FED7BA89212C0A8E00DB9523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED7BA92212C18F500DB9523 /* GBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBaseView.swift; sourceTree = "<group>"; };
+		FED7BA94212C190800DB9523 /* GBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBaseViewModel.swift; sourceTree = "<group>"; };
+		FED7BA96212C191700DB9523 /* GBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBaseModel.swift; sourceTree = "<group>"; };
+		FED7BA98212C199300DB9523 /* GNavigationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNavigationVM.swift; sourceTree = "<group>"; };
+		FED7BA9B212C1A1F00DB9523 /* GIntrodutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIntrodutionView.swift; sourceTree = "<group>"; };
+		FED7BA9C212C1A1F00DB9523 /* GIntrodutionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GIntrodutionView.xib; sourceTree = "<group>"; };
+		FED7BAA0212C1AAE00DB9523 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FED7BAA1212C1AAE00DB9523 /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		FED7BAA2212C1AAE00DB9523 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FED7BAA3212C1AAE00DB9523 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		FED7BAA4212C1AAE00DB9523 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		FED7BAA5212C1AAE00DB9523 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		FED7BAA6212C1AAE00DB9523 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		FED7BAA7212C1AAE00DB9523 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FED7BAA8212C1AAE00DB9523 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		FED7BAA9212C1AAE00DB9523 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		FED7BAAA212C1AAE00DB9523 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		FED7BAAB212C1AAE00DB9523 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D09BC06704464A66CAA87F /* Pods_Gymnastic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		487110D4022951BE325721BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5F1499FAFF56A7626CE579E /* Pods_Gymnastic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8165205F0B7994E55D7AB05F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D28E17BC473277081BED33CD /* Pods-Gymnastic.debug.xcconfig */,
+				22145EC71109275F6348C1A3 /* Pods-Gymnastic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FED7BA71212C0A8C00DB9523 = {
 			isa = PBXGroup;
 			children = (
 				FED7BA7C212C0A8C00DB9523 /* Gymnastic */,
 				FED7BA7B212C0A8C00DB9523 /* Products */,
+				8165205F0B7994E55D7AB05F /* Pods */,
+				487110D4022951BE325721BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +110,70 @@
 		FED7BA7C212C0A8C00DB9523 /* Gymnastic */ = {
 			isa = PBXGroup;
 			children = (
+				FED7BA9F212C1AAE00DB9523 /* Extension */,
+				FED7BA91212C180600DB9523 /* ViewModel */,
+				FED7BA90212C17FF00DB9523 /* View */,
+				FED7BA8F212C17FA00DB9523 /* Model */,
 				FED7BA7D212C0A8C00DB9523 /* AppDelegate.swift */,
-				FED7BA7F212C0A8C00DB9523 /* ViewController.swift */,
-				FED7BA81212C0A8C00DB9523 /* Main.storyboard */,
 				FED7BA84212C0A8E00DB9523 /* Assets.xcassets */,
 				FED7BA86212C0A8E00DB9523 /* LaunchScreen.storyboard */,
 				FED7BA89212C0A8E00DB9523 /* Info.plist */,
 			);
 			path = Gymnastic;
+			sourceTree = "<group>";
+		};
+		FED7BA8F212C17FA00DB9523 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FED7BA96212C191700DB9523 /* GBaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FED7BA90212C17FF00DB9523 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FED7BA9A212C19FD00DB9523 /* Introduction */,
+				FED7BA92212C18F500DB9523 /* GBaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FED7BA91212C180600DB9523 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FED7BA94212C190800DB9523 /* GBaseViewModel.swift */,
+				FED7BA98212C199300DB9523 /* GNavigationVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FED7BA9A212C19FD00DB9523 /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				FED7BA9B212C1A1F00DB9523 /* GIntrodutionView.swift */,
+				FED7BA9C212C1A1F00DB9523 /* GIntrodutionView.xib */,
+			);
+			path = Introduction;
+			sourceTree = "<group>";
+		};
+		FED7BA9F212C1AAE00DB9523 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FED7BAA0212C1AAE00DB9523 /* UIView.swift */,
+				FED7BAA1212C1AAE00DB9523 /* Collection.swift */,
+				FED7BAA2212C1AAE00DB9523 /* UIColor.swift */,
+				FED7BAA3212C1AAE00DB9523 /* UITableViewExtension.swift */,
+				FED7BAA4212C1AAE00DB9523 /* NSObject.swift */,
+				FED7BAA5212C1AAE00DB9523 /* UITextField.swift */,
+				FED7BAA6212C1AAE00DB9523 /* UIViewExtensions.swift */,
+				FED7BAA7212C1AAE00DB9523 /* String.swift */,
+				FED7BAA8212C1AAE00DB9523 /* UIImage.swift */,
+				FED7BAA9212C1AAE00DB9523 /* UIViewController.swift */,
+				FED7BAAA212C1AAE00DB9523 /* UIImageView.swift */,
+				FED7BAAB212C1AAE00DB9523 /* UIApplication.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FED7BA8C212C0A8E00DB9523 /* Build configuration list for PBXNativeTarget "Gymnastic" */;
 			buildPhases = (
+				8FDBCCC0526A20EC6275798F /* [CP] Check Pods Manifest.lock */,
 				FED7BA76212C0A8C00DB9523 /* Sources */,
 				FED7BA77212C0A8C00DB9523 /* Frameworks */,
 				FED7BA78212C0A8C00DB9523 /* Resources */,
+				E4660F56F87AC8FA71530C21 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,33 +238,88 @@
 			files = (
 				FED7BA88212C0A8E00DB9523 /* LaunchScreen.storyboard in Resources */,
 				FED7BA85212C0A8E00DB9523 /* Assets.xcassets in Resources */,
-				FED7BA83212C0A8C00DB9523 /* Main.storyboard in Resources */,
+				FED7BA9E212C1A1F00DB9523 /* GIntrodutionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FDBCCC0526A20EC6275798F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gymnastic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4660F56F87AC8FA71530C21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FED7BA76212C0A8C00DB9523 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FED7BA80212C0A8C00DB9523 /* ViewController.swift in Sources */,
+				FED7BAB7212C1AAE00DB9523 /* UIApplication.swift in Sources */,
+				FED7BA93212C18F500DB9523 /* GBaseView.swift in Sources */,
+				FED7BAB0212C1AAE00DB9523 /* NSObject.swift in Sources */,
+				FED7BAAF212C1AAE00DB9523 /* UITableViewExtension.swift in Sources */,
+				FED7BAB2212C1AAE00DB9523 /* UIViewExtensions.swift in Sources */,
+				FED7BAB3212C1AAE00DB9523 /* String.swift in Sources */,
+				FED7BA95212C190800DB9523 /* GBaseViewModel.swift in Sources */,
+				FED7BAB4212C1AAE00DB9523 /* UIImage.swift in Sources */,
+				FED7BA99212C199300DB9523 /* GNavigationVM.swift in Sources */,
+				FED7BAAC212C1AAE00DB9523 /* UIView.swift in Sources */,
+				FED7BAAE212C1AAE00DB9523 /* UIColor.swift in Sources */,
+				FED7BA9D212C1A1F00DB9523 /* GIntrodutionView.swift in Sources */,
+				FED7BA97212C191700DB9523 /* GBaseModel.swift in Sources */,
 				FED7BA7E212C0A8C00DB9523 /* AppDelegate.swift in Sources */,
+				FED7BAAD212C1AAE00DB9523 /* Collection.swift in Sources */,
+				FED7BAB5212C1AAE00DB9523 /* UIViewController.swift in Sources */,
+				FED7BAB6212C1AAE00DB9523 /* UIImageView.swift in Sources */,
+				FED7BAB1212C1AAE00DB9523 /* UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FED7BA81212C0A8C00DB9523 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FED7BA82212C0A8C00DB9523 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FED7BA86212C0A8E00DB9523 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,9 +447,11 @@
 		};
 		FED7BA8D212C0A8E00DB9523 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28E17BC473277081BED33CD /* Pods-Gymnastic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gymnastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.squall.Gymnastic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,9 +467,11 @@
 		};
 		FED7BA8E212C0A8E00DB9523 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22145EC71109275F6348C1A3 /* Pods-Gymnastic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gymnastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +479,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.squall.Gymnastic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
