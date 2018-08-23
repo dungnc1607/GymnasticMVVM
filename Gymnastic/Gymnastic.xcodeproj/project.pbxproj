@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		91D09BC06704464A66CAA87F /* Pods_Gymnastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F1499FAFF56A7626CE579E /* Pods_Gymnastic.framework */; };
+		FE5EA229212D3D3900501B9C /* GTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EA228212D3D3900501B9C /* GTabbarController.swift */; };
+		FE5EA22C212D3DAE00501B9C /* GGymView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EA22A212D3DAE00501B9C /* GGymView.swift */; };
+		FE5EA22D212D3DAE00501B9C /* GGymView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5EA22B212D3DAE00501B9C /* GGymView.xib */; };
+		FE5EA232212D3DDE00501B9C /* GHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EA230212D3DDE00501B9C /* GHistoryView.swift */; };
+		FE5EA233212D3DDE00501B9C /* GHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5EA231212D3DDE00501B9C /* GHistoryView.xib */; };
+		FE5EA238212D3E0E00501B9C /* GReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EA236212D3E0E00501B9C /* GReportView.swift */; };
+		FE5EA239212D3E0E00501B9C /* GReportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5EA237212D3E0E00501B9C /* GReportView.xib */; };
+		FE5EA23C212D3EEF00501B9C /* GCardioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EA23A212D3EEF00501B9C /* GCardioView.swift */; };
+		FE5EA23D212D3EEF00501B9C /* GCardioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5EA23B212D3EEF00501B9C /* GCardioView.xib */; };
+		FE5EA240212D3F1800501B9C /* GMainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EA23E212D3F1800501B9C /* GMainMenuView.swift */; };
+		FE5EA241212D3F1800501B9C /* GMainMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5EA23F212D3F1800501B9C /* GMainMenuView.xib */; };
+		FE5EA245212D533C00501B9C /* GMainMenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EA243212D533C00501B9C /* GMainMenuTableCell.swift */; };
+		FE5EA246212D533C00501B9C /* GMainMenuTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5EA244212D533C00501B9C /* GMainMenuTableCell.xib */; };
+		FEB81F90212E581700BCC78D /* GEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB81F8F212E581700BCC78D /* GEnum.swift */; };
+		FEB81F93212E5B5A00BCC78D /* GNavigation+MainMenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB81F92212E5B5A00BCC78D /* GNavigation+MainMenuVM.swift */; };
+		FEB81F97212E619C00BCC78D /* GSynchronizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB81F95212E619C00BCC78D /* GSynchronizeView.swift */; };
+		FEB81F98212E619C00BCC78D /* GSynchronizeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB81F96212E619C00BCC78D /* GSynchronizeView.xib */; };
+		FEB81F9C212E6ACD00BCC78D /* GGymCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB81F9A212E6ACD00BCC78D /* GGymCollectionCell.swift */; };
+		FEB81F9D212E6ACD00BCC78D /* GGymCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB81F9B212E6ACD00BCC78D /* GGymCollectionCell.xib */; };
 		FED7BA7E212C0A8C00DB9523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED7BA7D212C0A8C00DB9523 /* AppDelegate.swift */; };
 		FED7BA85212C0A8E00DB9523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED7BA84212C0A8E00DB9523 /* Assets.xcassets */; };
 		FED7BA88212C0A8E00DB9523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED7BA86212C0A8E00DB9523 /* LaunchScreen.storyboard */; };
@@ -35,6 +54,25 @@
 		22145EC71109275F6348C1A3 /* Pods-Gymnastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic.release.xcconfig"; sourceTree = "<group>"; };
 		D28E17BC473277081BED33CD /* Pods-Gymnastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic.debug.xcconfig"; sourceTree = "<group>"; };
 		D5F1499FAFF56A7626CE579E /* Pods_Gymnastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gymnastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE5EA228212D3D3900501B9C /* GTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTabbarController.swift; sourceTree = "<group>"; };
+		FE5EA22A212D3DAE00501B9C /* GGymView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGymView.swift; sourceTree = "<group>"; };
+		FE5EA22B212D3DAE00501B9C /* GGymView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGymView.xib; sourceTree = "<group>"; };
+		FE5EA230212D3DDE00501B9C /* GHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHistoryView.swift; sourceTree = "<group>"; };
+		FE5EA231212D3DDE00501B9C /* GHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GHistoryView.xib; sourceTree = "<group>"; };
+		FE5EA236212D3E0E00501B9C /* GReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GReportView.swift; sourceTree = "<group>"; };
+		FE5EA237212D3E0E00501B9C /* GReportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GReportView.xib; sourceTree = "<group>"; };
+		FE5EA23A212D3EEF00501B9C /* GCardioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCardioView.swift; sourceTree = "<group>"; };
+		FE5EA23B212D3EEF00501B9C /* GCardioView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCardioView.xib; sourceTree = "<group>"; };
+		FE5EA23E212D3F1800501B9C /* GMainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMainMenuView.swift; sourceTree = "<group>"; };
+		FE5EA23F212D3F1800501B9C /* GMainMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GMainMenuView.xib; sourceTree = "<group>"; };
+		FE5EA243212D533C00501B9C /* GMainMenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMainMenuTableCell.swift; sourceTree = "<group>"; };
+		FE5EA244212D533C00501B9C /* GMainMenuTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GMainMenuTableCell.xib; sourceTree = "<group>"; };
+		FEB81F8F212E581700BCC78D /* GEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEnum.swift; sourceTree = "<group>"; };
+		FEB81F92212E5B5A00BCC78D /* GNavigation+MainMenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNavigation+MainMenuVM.swift"; sourceTree = "<group>"; };
+		FEB81F95212E619C00BCC78D /* GSynchronizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSynchronizeView.swift; sourceTree = "<group>"; };
+		FEB81F96212E619C00BCC78D /* GSynchronizeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GSynchronizeView.xib; sourceTree = "<group>"; };
+		FEB81F9A212E6ACD00BCC78D /* GGymCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGymCollectionCell.swift; sourceTree = "<group>"; };
+		FEB81F9B212E6ACD00BCC78D /* GGymCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGymCollectionCell.xib; sourceTree = "<group>"; };
 		FED7BA7A212C0A8C00DB9523 /* Gymnastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gymnastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED7BA7D212C0A8C00DB9523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FED7BA84212C0A8E00DB9523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +127,81 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FE5EA22E212D3DB200501B9C /* Gym */ = {
+			isa = PBXGroup;
+			children = (
+				FEB81F99212E67D200BCC78D /* Cell */,
+				FE5EA22A212D3DAE00501B9C /* GGymView.swift */,
+				FE5EA22B212D3DAE00501B9C /* GGymView.xib */,
+			);
+			path = Gym;
+			sourceTree = "<group>";
+		};
+		FE5EA22F212D3DC000501B9C /* Cardio */ = {
+			isa = PBXGroup;
+			children = (
+				FE5EA23A212D3EEF00501B9C /* GCardioView.swift */,
+				FE5EA23B212D3EEF00501B9C /* GCardioView.xib */,
+			);
+			path = Cardio;
+			sourceTree = "<group>";
+		};
+		FE5EA234212D3DE900501B9C /* History */ = {
+			isa = PBXGroup;
+			children = (
+				FE5EA230212D3DDE00501B9C /* GHistoryView.swift */,
+				FE5EA231212D3DDE00501B9C /* GHistoryView.xib */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		FE5EA235212D3DF800501B9C /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				FE5EA236212D3E0E00501B9C /* GReportView.swift */,
+				FE5EA237212D3E0E00501B9C /* GReportView.xib */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		FE5EA242212D3F1C00501B9C /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FE5EA23E212D3F1800501B9C /* GMainMenuView.swift */,
+				FE5EA23F212D3F1800501B9C /* GMainMenuView.xib */,
+				FEB81F92212E5B5A00BCC78D /* GNavigation+MainMenuVM.swift */,
+				FEB81F91212E59F800BCC78D /* Cell */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		FEB81F91212E59F800BCC78D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FE5EA243212D533C00501B9C /* GMainMenuTableCell.swift */,
+				FE5EA244212D533C00501B9C /* GMainMenuTableCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FEB81F94212E5FD600BCC78D /* Synchronize */ = {
+			isa = PBXGroup;
+			children = (
+				FEB81F95212E619C00BCC78D /* GSynchronizeView.swift */,
+				FEB81F96212E619C00BCC78D /* GSynchronizeView.xib */,
+			);
+			path = Synchronize;
+			sourceTree = "<group>";
+		};
+		FEB81F99212E67D200BCC78D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FEB81F9A212E6ACD00BCC78D /* GGymCollectionCell.swift */,
+				FEB81F9B212E6ACD00BCC78D /* GGymCollectionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FED7BA71212C0A8C00DB9523 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +223,7 @@
 		FED7BA7C212C0A8C00DB9523 /* Gymnastic */ = {
 			isa = PBXGroup;
 			children = (
+				FEB81F8F212E581700BCC78D /* GEnum.swift */,
 				FED7BA9F212C1AAE00DB9523 /* Extension */,
 				FED7BA91212C180600DB9523 /* ViewModel */,
 				FED7BA90212C17FF00DB9523 /* View */,
@@ -133,8 +247,15 @@
 		FED7BA90212C17FF00DB9523 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FEB81F94212E5FD600BCC78D /* Synchronize */,
+				FE5EA22E212D3DB200501B9C /* Gym */,
+				FE5EA22F212D3DC000501B9C /* Cardio */,
+				FE5EA234212D3DE900501B9C /* History */,
+				FE5EA235212D3DF800501B9C /* Report */,
 				FED7BA9A212C19FD00DB9523 /* Introduction */,
+				FE5EA242212D3F1C00501B9C /* MainMenu */,
 				FED7BA92212C18F500DB9523 /* GBaseView.swift */,
+				FE5EA228212D3D3900501B9C /* GTabbarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,9 +357,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5EA23D212D3EEF00501B9C /* GCardioView.xib in Resources */,
+				FE5EA22D212D3DAE00501B9C /* GGymView.xib in Resources */,
 				FED7BA88212C0A8E00DB9523 /* LaunchScreen.storyboard in Resources */,
+				FE5EA239212D3E0E00501B9C /* GReportView.xib in Resources */,
 				FED7BA85212C0A8E00DB9523 /* Assets.xcassets in Resources */,
+				FEB81F98212E619C00BCC78D /* GSynchronizeView.xib in Resources */,
+				FE5EA246212D533C00501B9C /* GMainMenuTableCell.xib in Resources */,
 				FED7BA9E212C1A1F00DB9523 /* GIntrodutionView.xib in Resources */,
+				FE5EA241212D3F1800501B9C /* GMainMenuView.xib in Resources */,
+				FEB81F9D212E6ACD00BCC78D /* GGymCollectionCell.xib in Resources */,
+				FE5EA233212D3DDE00501B9C /* GHistoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +401,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -280,6 +411,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -297,21 +430,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				FED7BAB7212C1AAE00DB9523 /* UIApplication.swift in Sources */,
+				FEB81F9C212E6ACD00BCC78D /* GGymCollectionCell.swift in Sources */,
 				FED7BA93212C18F500DB9523 /* GBaseView.swift in Sources */,
+				FE5EA229212D3D3900501B9C /* GTabbarController.swift in Sources */,
 				FED7BAB0212C1AAE00DB9523 /* NSObject.swift in Sources */,
 				FED7BAAF212C1AAE00DB9523 /* UITableViewExtension.swift in Sources */,
 				FED7BAB2212C1AAE00DB9523 /* UIViewExtensions.swift in Sources */,
 				FED7BAB3212C1AAE00DB9523 /* String.swift in Sources */,
+				FEB81F97212E619C00BCC78D /* GSynchronizeView.swift in Sources */,
 				FED7BA95212C190800DB9523 /* GBaseViewModel.swift in Sources */,
+				FE5EA22C212D3DAE00501B9C /* GGymView.swift in Sources */,
 				FED7BAB4212C1AAE00DB9523 /* UIImage.swift in Sources */,
+				FE5EA240212D3F1800501B9C /* GMainMenuView.swift in Sources */,
 				FED7BA99212C199300DB9523 /* GNavigationVM.swift in Sources */,
 				FED7BAAC212C1AAE00DB9523 /* UIView.swift in Sources */,
 				FED7BAAE212C1AAE00DB9523 /* UIColor.swift in Sources */,
 				FED7BA9D212C1A1F00DB9523 /* GIntrodutionView.swift in Sources */,
 				FED7BA97212C191700DB9523 /* GBaseModel.swift in Sources */,
+				FE5EA232212D3DDE00501B9C /* GHistoryView.swift in Sources */,
 				FED7BA7E212C0A8C00DB9523 /* AppDelegate.swift in Sources */,
+				FEB81F90212E581700BCC78D /* GEnum.swift in Sources */,
+				FE5EA245212D533C00501B9C /* GMainMenuTableCell.swift in Sources */,
 				FED7BAAD212C1AAE00DB9523 /* Collection.swift in Sources */,
+				FEB81F93212E5B5A00BCC78D /* GNavigation+MainMenuVM.swift in Sources */,
+				FE5EA238212D3E0E00501B9C /* GReportView.swift in Sources */,
 				FED7BAB5212C1AAE00DB9523 /* UIViewController.swift in Sources */,
+				FE5EA23C212D3EEF00501B9C /* GCardioView.swift in Sources */,
 				FED7BAB6212C1AAE00DB9523 /* UIImageView.swift in Sources */,
 				FED7BAB1212C1AAE00DB9523 /* UITextField.swift in Sources */,
 			);

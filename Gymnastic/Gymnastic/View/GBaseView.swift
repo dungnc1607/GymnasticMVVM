@@ -16,6 +16,7 @@ class GBaseView: UIViewController, GNavigationVMProtocol {
 		super.viewDidLoad()
 		setNeedsStatusBarAppearanceUpdate()
 		vmNavigation = GNavigationVM(self)
+		setupForTabBar()
 	}
 	
 	override func didReceiveMemoryWarning() {
@@ -23,11 +24,11 @@ class GBaseView: UIViewController, GNavigationVMProtocol {
 		// Dispose of any resources that can be recreated.
 	}
 	
-	func open(vc: GBaseView) {
+	func push(_ vc: GBaseView) {
 		navigationController?.pushViewController(vc, animated: true )
 	}
 	
-	func close(toRoot: Bool) {
+	func pop(_ toRoot: Bool) {
 		if toRoot{
 			navigationController?.popToRootViewController(animated: true)
 		}else{
@@ -35,8 +36,24 @@ class GBaseView: UIViewController, GNavigationVMProtocol {
 		}
 	}
 	
-	func closeToVC(_ vc: GBaseView) {
+	func popTo(_ vc: GBaseView) {
 		navigationController?.popToViewController(vc, animated: true)
 	}
 
+	//MARK: - Setup function
+	func setupForTabBar() {
+		title = self.objectName
+		navigationItem.leftBarButtonItem = nil
+		navigationItem.rightBarButtonItem = nil
+		navigationItem.hidesBackButton = true
+		if (navigationController?.viewControllers.count)! > 1 {
+			let leftCloseButton: UIBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(selfClose))
+			navigationItem.leftBarButtonItem = leftCloseButton
+		}
+	}
+	
+	//MARK: - Objc function
+	@objc func selfClose() {
+		navigationController?.popViewController(animated: true)
+	}
 }

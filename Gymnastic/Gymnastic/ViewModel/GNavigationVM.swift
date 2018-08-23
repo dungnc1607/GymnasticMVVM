@@ -9,9 +9,9 @@
 import UIKit
 
 protocol GNavigationVMProtocol {
-	func open(vc: GBaseView)
-	func close(toRoot: Bool)
-	func closeToVC(_ vc: GBaseView)
+	func push(_ vc: GBaseView)
+	func pop(_ toRoot: Bool)
+	func popTo(_ vc: GBaseView)
 }
 
 class GNavigationVM: GBaseViewModel {

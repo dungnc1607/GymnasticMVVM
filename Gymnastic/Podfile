@@ -11,4 +11,5 @@ target 'Gymnastic' do
   pod 'ObjectMapper', '~> 3.3'
   pod 'Alamofire', '~> 4.7'
   pod 'SVProgressHUD'
+  pod 'RealmSwift'
 end

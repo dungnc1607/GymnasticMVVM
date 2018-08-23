@@ -12,11 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-
+	var tabBarController: GTabbarController = GTabbarController()
+	
+	//MARK: - UIApplicationDelegate handle
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		setupTabBar()
 		window = UIWindow(frame: UIScreen.main.bounds)
-		window?.rootViewController = UINavigationController(rootViewController: GIntrodutionView(nibName: GIntrodutionView.typeName, bundle: nil))
+		window?.rootViewController = tabBarController
 		window?.makeKeyAndVisible()
 		return true
 	}
@@ -42,7 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationWillTerminate(_ application: UIApplication) {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 	}
-
-
+	
+	//MARK: - Initialize function
+	func setupTabBar() {
+		tabBarController.createView()
+	}
 }
-

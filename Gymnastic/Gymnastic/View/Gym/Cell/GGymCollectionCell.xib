@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GGymCollectionCell" id="gTV-IL-0wX" customClass="GGymCollectionCell" customModule="Gymnastic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black_white_border" translatesAutoresizingMaskIntoConstraints="NO" id="LrG-CW-KwP">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dumbell" translatesAutoresizingMaskIntoConstraints="NO" id="9yT-kR-8o3">
+                        <rect key="frame" x="20" y="-6" width="110" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="wTt-50-CfW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqM-Oy-eDF">
+                        <rect key="frame" x="0.0" y="109" width="150" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9yT-kR-8o3" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="20" id="6gM-u0-Li1"/>
+                <constraint firstItem="tqM-Oy-eDF" firstAttribute="top" secondItem="9yT-kR-8o3" secondAttribute="bottom" constant="5" id="9Bm-oX-WYp"/>
+                <constraint firstItem="LrG-CW-KwP" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" id="LBV-sC-o35"/>
+                <constraint firstItem="tqM-Oy-eDF" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="SbF-i3-wcr"/>
+                <constraint firstItem="9yT-kR-8o3" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Yxf-Cr-6ld"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="LrG-CW-KwP" secondAttribute="leading" id="ZIr-nU-uJ7"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="LrG-CW-KwP" secondAttribute="bottom" id="aQS-GW-3bk"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="9yT-kR-8o3" secondAttribute="trailing" constant="20" id="diW-16-wJw"/>
+                <constraint firstItem="LrG-CW-KwP" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="jNM-au-MLz"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="tqM-Oy-eDF" secondAttribute="trailing" id="p5K-Rf-HHH"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="tqM-Oy-eDF" secondAttribute="bottom" constant="20" id="sbo-v2-md4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="iconMuscle" destination="9yT-kR-8o3" id="8kP-sq-qHn"/>
+                <outlet property="labelMuscleName" destination="tqM-Oy-eDF" id="O4V-FP-rea"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="black_white_border" width="85" height="85"/>
+        <image name="ic_dumbell" width="25" height="25"/>
+    </resources>
+</document>
