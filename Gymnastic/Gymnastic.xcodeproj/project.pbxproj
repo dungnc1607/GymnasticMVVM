@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		91D09BC06704464A66CAA87F /* Pods_Gymnastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F1499FAFF56A7626CE579E /* Pods_Gymnastic.framework */; };
+		E69F6492212FA82D00E7C167 /* GExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F6490212FA82D00E7C167 /* GExerciseView.swift */; };
+		E69F6493212FA82D00E7C167 /* GExerciseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69F6491212FA82D00E7C167 /* GExerciseView.xib */; };
+		E69F6498212FAE9B00E7C167 /* GIndicatorTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F6497212FAE9B00E7C167 /* GIndicatorTabView.swift */; };
+		E69F649C212FB0A200E7C167 /* GConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F649B212FB0A200E7C167 /* GConstant.swift */; };
+		E69F649E212FC3CE00E7C167 /* GNavigation+GymView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F649D212FC3CE00E7C167 /* GNavigation+GymView.swift */; };
+		E6C441AD212EB9BB008AE44A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6C441AF212EB9BB008AE44A /* Localizable.strings */; };
 		FE5EA229212D3D3900501B9C /* GTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EA228212D3D3900501B9C /* GTabbarController.swift */; };
 		FE5EA22C212D3DAE00501B9C /* GGymView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EA22A212D3DAE00501B9C /* GGymView.swift */; };
 		FE5EA22D212D3DAE00501B9C /* GGymView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5EA22B212D3DAE00501B9C /* GGymView.xib */; };
@@ -54,6 +60,13 @@
 		22145EC71109275F6348C1A3 /* Pods-Gymnastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic.release.xcconfig"; sourceTree = "<group>"; };
 		D28E17BC473277081BED33CD /* Pods-Gymnastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic.debug.xcconfig"; sourceTree = "<group>"; };
 		D5F1499FAFF56A7626CE579E /* Pods_Gymnastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gymnastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69F6490212FA82D00E7C167 /* GExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GExerciseView.swift; sourceTree = "<group>"; };
+		E69F6491212FA82D00E7C167 /* GExerciseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GExerciseView.xib; sourceTree = "<group>"; };
+		E69F6497212FAE9B00E7C167 /* GIndicatorTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIndicatorTabView.swift; sourceTree = "<group>"; };
+		E69F649B212FB0A200E7C167 /* GConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GConstant.swift; sourceTree = "<group>"; };
+		E69F649D212FC3CE00E7C167 /* GNavigation+GymView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNavigation+GymView.swift"; sourceTree = "<group>"; };
+		E6C441AE212EB9BB008AE44A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E6C441B0212EBA00008AE44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FE5EA228212D3D3900501B9C /* GTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTabbarController.swift; sourceTree = "<group>"; };
 		FE5EA22A212D3DAE00501B9C /* GGymView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GGymView.swift; sourceTree = "<group>"; };
 		FE5EA22B212D3DAE00501B9C /* GGymView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GGymView.xib; sourceTree = "<group>"; };
@@ -127,12 +140,54 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E69F648F212FA78C00E7C167 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				E69F6490212FA82D00E7C167 /* GExerciseView.swift */,
+				E69F6491212FA82D00E7C167 /* GExerciseView.xib */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		E69F6494212FAE5C00E7C167 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E69F6495212FAE6A00E7C167 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E69F6495212FAE6A00E7C167 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E69F6497212FAE9B00E7C167 /* GIndicatorTabView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E69F6496212FAE7600E7C167 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				FEB81F8F212E581700BCC78D /* GEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		E69F6499212FB07400E7C167 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E69F649B212FB0A200E7C167 /* GConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		FE5EA22E212D3DB200501B9C /* Gym */ = {
 			isa = PBXGroup;
 			children = (
 				FEB81F99212E67D200BCC78D /* Cell */,
 				FE5EA22A212D3DAE00501B9C /* GGymView.swift */,
 				FE5EA22B212D3DAE00501B9C /* GGymView.xib */,
+				E69F649D212FC3CE00E7C167 /* GNavigation+GymView.swift */,
 			);
 			path = Gym;
 			sourceTree = "<group>";
@@ -223,7 +278,9 @@
 		FED7BA7C212C0A8C00DB9523 /* Gymnastic */ = {
 			isa = PBXGroup;
 			children = (
-				FEB81F8F212E581700BCC78D /* GEnum.swift */,
+				E69F6499212FB07400E7C167 /* Constant */,
+				E69F6496212FAE7600E7C167 /* Enum */,
+				E69F6494212FAE5C00E7C167 /* Common */,
 				FED7BA9F212C1AAE00DB9523 /* Extension */,
 				FED7BA91212C180600DB9523 /* ViewModel */,
 				FED7BA90212C17FF00DB9523 /* View */,
@@ -232,6 +289,7 @@
 				FED7BA84212C0A8E00DB9523 /* Assets.xcassets */,
 				FED7BA86212C0A8E00DB9523 /* LaunchScreen.storyboard */,
 				FED7BA89212C0A8E00DB9523 /* Info.plist */,
+				E6C441AF212EB9BB008AE44A /* Localizable.strings */,
 			);
 			path = Gymnastic;
 			sourceTree = "<group>";
@@ -247,6 +305,7 @@
 		FED7BA90212C17FF00DB9523 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E69F648F212FA78C00E7C167 /* Exercise */,
 				FEB81F94212E5FD600BCC78D /* Synchronize */,
 				FE5EA22E212D3DB200501B9C /* Gym */,
 				FE5EA22F212D3DC000501B9C /* Cardio */,
@@ -358,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5EA23D212D3EEF00501B9C /* GCardioView.xib in Resources */,
+				E6C441AD212EB9BB008AE44A /* Localizable.strings in Resources */,
 				FE5EA22D212D3DAE00501B9C /* GGymView.xib in Resources */,
 				FED7BA88212C0A8E00DB9523 /* LaunchScreen.storyboard in Resources */,
 				FE5EA239212D3E0E00501B9C /* GReportView.xib in Resources */,
@@ -365,6 +425,7 @@
 				FEB81F98212E619C00BCC78D /* GSynchronizeView.xib in Resources */,
 				FE5EA246212D533C00501B9C /* GMainMenuTableCell.xib in Resources */,
 				FED7BA9E212C1A1F00DB9523 /* GIntrodutionView.xib in Resources */,
+				E69F6493212FA82D00E7C167 /* GExerciseView.xib in Resources */,
 				FE5EA241212D3F1800501B9C /* GMainMenuView.xib in Resources */,
 				FEB81F9D212E6ACD00BCC78D /* GGymCollectionCell.xib in Resources */,
 				FE5EA233212D3DDE00501B9C /* GHistoryView.xib in Resources */,
@@ -429,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E69F6492212FA82D00E7C167 /* GExerciseView.swift in Sources */,
 				FED7BAB7212C1AAE00DB9523 /* UIApplication.swift in Sources */,
 				FEB81F9C212E6ACD00BCC78D /* GGymCollectionCell.swift in Sources */,
 				FED7BA93212C18F500DB9523 /* GBaseView.swift in Sources */,
@@ -440,8 +502,10 @@
 				FEB81F97212E619C00BCC78D /* GSynchronizeView.swift in Sources */,
 				FED7BA95212C190800DB9523 /* GBaseViewModel.swift in Sources */,
 				FE5EA22C212D3DAE00501B9C /* GGymView.swift in Sources */,
+				E69F6498212FAE9B00E7C167 /* GIndicatorTabView.swift in Sources */,
 				FED7BAB4212C1AAE00DB9523 /* UIImage.swift in Sources */,
 				FE5EA240212D3F1800501B9C /* GMainMenuView.swift in Sources */,
+				E69F649E212FC3CE00E7C167 /* GNavigation+GymView.swift in Sources */,
 				FED7BA99212C199300DB9523 /* GNavigationVM.swift in Sources */,
 				FED7BAAC212C1AAE00DB9523 /* UIView.swift in Sources */,
 				FED7BAAE212C1AAE00DB9523 /* UIColor.swift in Sources */,
@@ -454,6 +518,7 @@
 				FED7BAAD212C1AAE00DB9523 /* Collection.swift in Sources */,
 				FEB81F93212E5B5A00BCC78D /* GNavigation+MainMenuVM.swift in Sources */,
 				FE5EA238212D3E0E00501B9C /* GReportView.swift in Sources */,
+				E69F649C212FB0A200E7C167 /* GConstant.swift in Sources */,
 				FED7BAB5212C1AAE00DB9523 /* UIViewController.swift in Sources */,
 				FE5EA23C212D3EEF00501B9C /* GCardioView.swift in Sources */,
 				FED7BAB6212C1AAE00DB9523 /* UIImageView.swift in Sources */,
@@ -464,6 +529,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E6C441AF212EB9BB008AE44A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6C441AE212EB9BB008AE44A /* en */,
+				E6C441B0212EBA00008AE44A /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FED7BA86212C0A8E00DB9523 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -594,9 +668,11 @@
 			baseConfigurationReference = D28E17BC473277081BED33CD /* Pods-Gymnastic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gymnastic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,9 +690,11 @@
 			baseConfigurationReference = 22145EC71109275F6348C1A3 /* Pods-Gymnastic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gymnastic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

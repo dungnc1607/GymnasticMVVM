@@ -14,3 +14,10 @@ enum MENU_INDEX: Int {
 	case REPORT
 	case SYNCHRONIZE
 }
+
+enum EXERCISE_TAB:Int{
+    case BARBELL
+    case DUMBELL
+    case CABLE
+    case BAREHAND
+}

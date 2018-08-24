@@ -11,7 +11,7 @@ import UIKit
 class GGymCollectionCell: UICollectionViewCell {
 	@IBOutlet weak var iconMuscle: UIImageView!
 	@IBOutlet weak var labelMuscleName: UILabel!
-	
+    var onPressCell:(()-> Void)?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,4 +24,8 @@ class GGymCollectionCell: UICollectionViewCell {
 		iconMuscle.image = UIImage(named: muscleIcon)
 		labelMuscleName.text = muscleName
 	}
+    
+    @IBAction func actionPressCell(_ sender: Any) {
+        onPressCell?()
+    }
 }

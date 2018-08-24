@@ -45,6 +45,9 @@ extension GGymView: UICollectionViewDataSource, UICollectionViewDelegateFlowLayo
 		let cell: GGymCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: GGymCollectionCell.typeName, for: indexPath) as! GGymCollectionCell
 		let muscleTuple = muscleList[indexPath.item]
 		cell.updateContent(muscleTuple.1, muscleTuple.0)
+        cell.onPressCell = {
+            self.vmNavigation?.openExercise()
+        }
 		return cell
 	}
 	

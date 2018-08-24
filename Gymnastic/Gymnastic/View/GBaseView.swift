@@ -42,7 +42,7 @@ class GBaseView: UIViewController, GNavigationVMProtocol {
 
 	//MARK: - Setup function
 	func setupForTabBar() {
-		title = self.objectName
+		title = self.objectName.localizable
 		navigationItem.leftBarButtonItem = nil
 		navigationItem.rightBarButtonItem = nil
 		navigationItem.hidesBackButton = true

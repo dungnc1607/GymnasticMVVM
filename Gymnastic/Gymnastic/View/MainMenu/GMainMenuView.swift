@@ -26,7 +26,7 @@ class GMainMenuView: GBaseView {
 	
 	func setupTableView() {
 		tableView.registerCellNib(GMainMenuTableCell.self)
-		tableView.tableFooterView = UIView()
+        tableView.tableFooterView = UIView()
 	}
 }
 
@@ -62,6 +62,6 @@ extension GMainMenuView: UITableViewDataSource, UITableViewDelegate {
 		case .SYNCHRONIZE:
 			self.vmNavigation?.openSynchronize()
 		}
-		tableView.deselectRow(at: indexPath, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
 	}
 }
