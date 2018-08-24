@@ -16,8 +16,8 @@ class GExerciseView: GBaseView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        indicatorTab.createTab(["a", "b", "c", "d"], delegate: self)
-        
+//		indicatorTab.createTab(items: ["a", "b", "c", "d"], delegate: self)
+        indicatorTab.createTab(images: ["ic_barbell","ic_xdumbell","ic_cable","ic_glove"], delegate: self)
     }
     
     func updateHeaderView(){
