@@ -16,8 +16,19 @@ enum MENU_INDEX: Int {
 }
 
 enum EXERCISE_TAB:Int{
+    case NONE
     case BARBELL
     case DUMBELL
     case CABLE
     case BAREHAND
+}
+
+enum KIND_OF_MUSCLE:Int{
+    case NONE
+    case CHEST
+    case SHOULDER
+    case BACK
+    case HAND
+    case LEG
+    case CORE
 }

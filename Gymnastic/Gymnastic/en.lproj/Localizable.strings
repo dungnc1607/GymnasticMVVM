@@ -7,3 +7,5 @@
 */
 "GMainMenuView" = "Menu";
 "GGymView" = "Exercise";
+"GExerciseView" = "Exercise List";
+"GExerciseDetail" = "Details";

@@ -45,9 +45,42 @@ extension GGymView: UICollectionViewDataSource, UICollectionViewDelegateFlowLayo
 		let cell: GGymCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: GGymCollectionCell.typeName, for: indexPath) as! GGymCollectionCell
 		let muscleTuple = muscleList[indexPath.item]
 		cell.updateContent(muscleTuple.1, muscleTuple.0)
-        cell.onPressCell = {
-            self.vmNavigation?.openExercise()
+        var kindOfExercise:KIND_OF_MUSCLE = .NONE
+        switch indexPath.row {
+        case 0:
+            kindOfExercise = .CHEST
+            cell.onPressCell = {
+                self.vmNavigation?.openExercise(kindOfExercise)
+            }
+        case 1:
+            kindOfExercise = .SHOULDER
+            cell.onPressCell = {
+                self.vmNavigation?.openExercise(kindOfExercise)
+            }
+        case 2:
+            kindOfExercise = .BACK
+            cell.onPressCell = {
+                self.vmNavigation?.openExercise(kindOfExercise)
+            }
+        case 3:
+            kindOfExercise = .HAND
+            cell.onPressCell = {
+                self.vmNavigation?.openExercise(kindOfExercise)
+            }
+        case 4:
+            kindOfExercise = .LEG
+            cell.onPressCell = {
+                self.vmNavigation?.openExercise(kindOfExercise)
+            }
+        case 5:
+            kindOfExercise = .CORE
+            cell.onPressCell = {
+                self.vmNavigation?.openExercise(kindOfExercise)
+            }
+        default:
+            break
         }
+        
 		return cell
 	}
 	
