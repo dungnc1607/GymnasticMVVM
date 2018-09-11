@@ -21,8 +21,8 @@ extension GNavigationVM {
 	}
 	
 	func openReport() {
-		let vc: GReportView = GReportView(nibName: GReportView.typeName, bundle: nil)
-		ownerView?.push(vc)
+        let vc:GReportView = GReportView(nibName: GReportView.typeName, bundle: nil)
+        ownerView?.push(vc)
 	}
 	
 	func openSynchronize() {

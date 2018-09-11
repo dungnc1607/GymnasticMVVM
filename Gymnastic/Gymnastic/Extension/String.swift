@@ -62,6 +62,10 @@ extension String {
         return NSDecimalNumber(string: self)
     }
     
+    func toDouble() -> Double?{
+        return NumberFormatter().number(from: self)?.doubleValue
+    }
+    
     var isValidDec: Bool {
         return self.toDecimal.compare(NSDecimalNumber.notANumber) != ComparisonResult.orderedSame
     }

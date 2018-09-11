@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (4.7.3)
+  - Charts (3.0.5):
+    - Charts/Core (= 3.0.5)
+  - Charts/Core (3.0.5)
   - ObjectMapper (3.3.0)
   - Realm (3.7.6):
     - Realm/Headers (= 3.7.6)
@@ -14,8 +17,10 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Charts (~> 3.0.1)
   - ObjectMapper (~> 3.3)
   - RealmSwift
+  - RealmSwift (~> 3.7.6)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SVProgressHUD
@@ -24,6 +29,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Charts
     - ObjectMapper
     - Realm
     - RealmSwift
@@ -34,6 +40,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
   RealmSwift: 1fe08b4ebaeeaacf17f9ba0343f7b25c9fc31fa6
@@ -42,6 +49,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: 8c1ad7b5f0b70054500616170866790f4a7a9706
+PODFILE CHECKSUM: 6dc2aefc2fddec60c774a11d99a519ae38c565bd
 
 COCOAPODS: 1.5.3
