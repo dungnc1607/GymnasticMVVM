@@ -26,14 +26,30 @@ class GAddDataDialog: GBaseDialog {
         super.didReceiveMemoryWarning()
     }
     
+    
+    
     @IBAction func actionPressButtonShowChart(_ sender: Any) {
         if textfieldWeight.text == "" || textfieldSMM.text == "" || textfieldBFM.text == "" {
-            //Push notification error
+            //TODO: Push Notification ERROR!
         }else{
-            UserDefaults.standard.saveChartData((textfieldWeight.text?.toDouble())!, ((textfieldSMM.text)?.toDouble())!, ((textfieldBFM.text)?.toDouble())!)
-            self.dismiss()
+            let date = Date()
+            let calender = Calendar.current
+            let components = calender.dateComponents([.year,.month,.day], from: date)
+            let month = components.month
+            let day = components.day
+            let monthStr = month! < 10 ? "0\(month!)" : "\(month!)"
+            let dayStr = day! < 10 ? "0\(day!)" : "\(day!)"
+            let time = monthStr + "/" + dayStr
             
+            
+            
+            UserDefaults.standard.saveChartData(time, (textfieldWeight.text?.toDouble())!, ((textfieldSMM.text)?.toDouble())!, ((textfieldBFM.text)?.toDouble())!)
+            self.dismiss()
         }
     }
+    @IBAction func actionPressCancel(_ sender: Any) {
+        self.dismiss()
+    }
 }
+
 

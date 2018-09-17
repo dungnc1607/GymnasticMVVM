@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		91D09BC06704464A66CAA87F /* Pods_Gymnastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F1499FAFF56A7626CE579E /* Pods_Gymnastic.framework */; };
+		E601FBD2214B709400521DE3 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601FBD1214B709400521DE3 /* Configuration.swift */; };
+		E601FBD7214BB3A600521DE3 /* GComboBoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601FBD5214BB3A600521DE3 /* GComboBoxCell.swift */; };
+		E601FBD8214BB3A600521DE3 /* GComboBoxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E601FBD6214BB3A600521DE3 /* GComboBoxCell.xib */; };
 		E60502D92133E79C00044FF0 /* GExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60502D72133E79C00044FF0 /* GExerciseDetail.swift */; };
 		E60502DA2133E79C00044FF0 /* GExerciseDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60502D82133E79C00044FF0 /* GExerciseDetail.xib */; };
 		E60502DC2133EC4000044FF0 /* GNavigation+ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60502DB2133EC4000044FF0 /* GNavigation+ExerciseView.swift */; };
@@ -16,8 +19,10 @@
 		E60D051E2147AB3A00F33935 /* GAddDataDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60D051C2147AB3A00F33935 /* GAddDataDialog.xib */; };
 		E60D05202147B8BC00F33935 /* GNavigation+AddDataDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D051F2147B8BC00F33935 /* GNavigation+AddDataDialog.swift */; };
 		E60D05222147BC0E00F33935 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60D05212147BC0E00F33935 /* UserDefaults.swift */; };
+		E6254CD0214F4D0200F5DE52 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6254CCF214F4D0200F5DE52 /* LocalNotificationManager.swift */; };
 		E63AC3A321339FA2005983A1 /* GExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AC3A121339FA2005983A1 /* GExerciseCell.swift */; };
 		E63AC3A421339FA2005983A1 /* GExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63AC3A221339FA2005983A1 /* GExerciseCell.xib */; };
+		E647DDD9214B5D0D00736D83 /* GUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E647DDD8214B5D0D00736D83 /* GUtility.swift */; };
 		E69F6492212FA82D00E7C167 /* GExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F6490212FA82D00E7C167 /* GExerciseView.swift */; };
 		E69F6493212FA82D00E7C167 /* GExerciseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69F6491212FA82D00E7C167 /* GExerciseView.xib */; };
 		E69F6498212FAE9B00E7C167 /* GIndicatorTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F6497212FAE9B00E7C167 /* GIndicatorTabView.swift */; };
@@ -70,6 +75,9 @@
 		22145EC71109275F6348C1A3 /* Pods-Gymnastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic.release.xcconfig"; sourceTree = "<group>"; };
 		D28E17BC473277081BED33CD /* Pods-Gymnastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymnastic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gymnastic/Pods-Gymnastic.debug.xcconfig"; sourceTree = "<group>"; };
 		D5F1499FAFF56A7626CE579E /* Pods_Gymnastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gymnastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E601FBD1214B709400521DE3 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		E601FBD5214BB3A600521DE3 /* GComboBoxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GComboBoxCell.swift; sourceTree = "<group>"; };
+		E601FBD6214BB3A600521DE3 /* GComboBoxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GComboBoxCell.xib; sourceTree = "<group>"; };
 		E60502D72133E79C00044FF0 /* GExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GExerciseDetail.swift; sourceTree = "<group>"; };
 		E60502D82133E79C00044FF0 /* GExerciseDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GExerciseDetail.xib; sourceTree = "<group>"; };
 		E60502DB2133EC4000044FF0 /* GNavigation+ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNavigation+ExerciseView.swift"; sourceTree = "<group>"; };
@@ -78,8 +86,10 @@
 		E60D051C2147AB3A00F33935 /* GAddDataDialog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GAddDataDialog.xib; sourceTree = "<group>"; };
 		E60D051F2147B8BC00F33935 /* GNavigation+AddDataDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNavigation+AddDataDialog.swift"; sourceTree = "<group>"; };
 		E60D05212147BC0E00F33935 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		E6254CCF214F4D0200F5DE52 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		E63AC3A121339FA2005983A1 /* GExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GExerciseCell.swift; sourceTree = "<group>"; };
 		E63AC3A221339FA2005983A1 /* GExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GExerciseCell.xib; sourceTree = "<group>"; };
+		E647DDD8214B5D0D00736D83 /* GUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUtility.swift; sourceTree = "<group>"; };
 		E69F6490212FA82D00E7C167 /* GExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GExerciseView.swift; sourceTree = "<group>"; };
 		E69F6491212FA82D00E7C167 /* GExerciseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GExerciseView.xib; sourceTree = "<group>"; };
 		E69F6497212FAE9B00E7C167 /* GIndicatorTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIndicatorTabView.swift; sourceTree = "<group>"; };
@@ -160,6 +170,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E601FBD0214B702F00521DE3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E601FBD1214B709400521DE3 /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		E601FBD3214BB37400521DE3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E601FBD5214BB3A600521DE3 /* GComboBoxCell.swift */,
+				E601FBD6214BB3A600521DE3 /* GComboBoxCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E60502D62133E76800044FF0 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +222,15 @@
 				E63AC3A221339FA2005983A1 /* GExerciseCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		E647DDD7214B5C9F00736D83 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E647DDD8214B5D0D00736D83 /* GUtility.swift */,
+				E6254CCF214F4D0200F5DE52 /* LocalNotificationManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		E69F648F212FA78C00E7C167 /* Exercise */ = {
@@ -274,6 +310,7 @@
 		FE5EA235212D3DF800501B9C /* Report */ = {
 			isa = PBXGroup;
 			children = (
+				E601FBD3214BB37400521DE3 /* Cell */,
 				FE5EA236212D3E0E00501B9C /* GReportView.swift */,
 				FE5EA237212D3E0E00501B9C /* GReportView.xib */,
 			);
@@ -339,6 +376,8 @@
 		FED7BA7C212C0A8C00DB9523 /* Gymnastic */ = {
 			isa = PBXGroup;
 			children = (
+				E601FBD0214B702F00521DE3 /* Configuration */,
+				E647DDD7214B5C9F00736D83 /* Utilities */,
 				E69F6499212FB07400E7C167 /* Constant */,
 				E69F6496212FAE7600E7C167 /* Enum */,
 				E69F6494212FAE5C00E7C167 /* Common */,
@@ -486,6 +525,7 @@
 				E60502DA2133E79C00044FF0 /* GExerciseDetail.xib in Resources */,
 				FE5EA239212D3E0E00501B9C /* GReportView.xib in Resources */,
 				FED7BA85212C0A8E00DB9523 /* Assets.xcassets in Resources */,
+				E601FBD8214BB3A600521DE3 /* GComboBoxCell.xib in Resources */,
 				FEB81F98212E619C00BCC78D /* GSynchronizeView.xib in Resources */,
 				FE5EA246212D533C00501B9C /* GMainMenuTableCell.xib in Resources */,
 				FED7BA9E212C1A1F00DB9523 /* GIntrodutionView.xib in Resources */,
@@ -561,6 +601,7 @@
 			files = (
 				E60D051A2147A81B00F33935 /* GBaseDialog.swift in Sources */,
 				E60D051D2147AB3A00F33935 /* GAddDataDialog.swift in Sources */,
+				E647DDD9214B5D0D00736D83 /* GUtility.swift in Sources */,
 				E69F6492212FA82D00E7C167 /* GExerciseView.swift in Sources */,
 				FED7BAB7212C1AAE00DB9523 /* UIApplication.swift in Sources */,
 				E60502DC2133EC4000044FF0 /* GNavigation+ExerciseView.swift in Sources */,
@@ -580,6 +621,7 @@
 				FE5EA240212D3F1800501B9C /* GMainMenuView.swift in Sources */,
 				E69F649E212FC3CE00E7C167 /* GNavigation+GymView.swift in Sources */,
 				FED7BA99212C199300DB9523 /* GNavigationVM.swift in Sources */,
+				E6254CD0214F4D0200F5DE52 /* LocalNotificationManager.swift in Sources */,
 				FED7BAAC212C1AAE00DB9523 /* UIView.swift in Sources */,
 				FED7BAAE212C1AAE00DB9523 /* UIColor.swift in Sources */,
 				FED7BA9D212C1A1F00DB9523 /* GIntrodutionView.swift in Sources */,
@@ -588,6 +630,7 @@
 				FED7BA7E212C0A8C00DB9523 /* AppDelegate.swift in Sources */,
 				E63AC3A321339FA2005983A1 /* GExerciseCell.swift in Sources */,
 				FEB81F90212E581700BCC78D /* GEnum.swift in Sources */,
+				E601FBD2214B709400521DE3 /* Configuration.swift in Sources */,
 				FE5EA245212D533C00501B9C /* GMainMenuTableCell.swift in Sources */,
 				FED7BAAD212C1AAE00DB9523 /* Collection.swift in Sources */,
 				E60D05202147B8BC00F33935 /* GNavigation+AddDataDialog.swift in Sources */,
@@ -598,6 +641,7 @@
 				E60D05222147BC0E00F33935 /* UserDefaults.swift in Sources */,
 				FE5EA23C212D3EEF00501B9C /* GCardioView.swift in Sources */,
 				FED7BAB6212C1AAE00DB9523 /* UIImageView.swift in Sources */,
+				E601FBD7214BB3A600521DE3 /* GComboBoxCell.swift in Sources */,
 				FED7BAB1212C1AAE00DB9523 /* UITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

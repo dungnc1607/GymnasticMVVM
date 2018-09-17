@@ -67,3 +67,4 @@ let CORE_BAREHAND_ID: [String] = ["V4qhxtXLtaU", "Imui46JTe7s", "ANVdMDaYRts", "
 let CORE_CABLE: [String] = ["Ab Wheel Rollout", "Dip/Leg Raise Combo"]
 let CORE_CABLE_ID: [String] = ["PwqJTPsI6i0", "UGjlo6FTQTs"]
 
+let COLOR_NAVIGATIONBAR_BUTTON: UIColor = UIColor.init(hex: "0075FB", alpha: 1.0)

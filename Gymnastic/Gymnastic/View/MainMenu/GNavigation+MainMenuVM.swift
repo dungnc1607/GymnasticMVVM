@@ -22,6 +22,7 @@ extension GNavigationVM {
 	
 	func openReport() {
         let vc:GReportView = GReportView(nibName: GReportView.typeName, bundle: nil)
+        vc.navigationButtonType = .BLUE_PLUS
         ownerView?.push(vc)
 	}
 	

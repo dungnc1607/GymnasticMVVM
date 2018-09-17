@@ -32,3 +32,10 @@ enum KIND_OF_MUSCLE:Int{
     case LEG
     case CORE
 }
+
+// - MARK: Navigation bar
+enum navigationButtonType: Int{
+    case NONE = 0,
+    BLUE_PLUS,
+    BLUE_BIN
+}

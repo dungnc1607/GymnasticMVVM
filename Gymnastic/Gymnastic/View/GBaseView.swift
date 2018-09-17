@@ -11,12 +11,15 @@ import UIKit
 class GBaseView: UIViewController, GNavigationVMProtocol {
 
 	var vmNavigation: GNavigationVM?
-	
+    var navigationButtonType:navigationButtonType = .NONE
+    
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setNeedsStatusBarAppearanceUpdate()
 		vmNavigation = GNavigationVM(self)
 		setupForTabBar()
+        setupNavigationBarItems()
 	}
 	
 	override func didReceiveMemoryWarning() {
@@ -52,8 +55,48 @@ class GBaseView: UIViewController, GNavigationVMProtocol {
 		}
 	}
 	
+    func setupNavigationBarItems(){
+        navigationItem.leftBarButtonItem = nil
+        navigationItem.rightBarButtonItem = nil
+        
+        switch navigationButtonType {
+        case .NONE:
+            break
+        case .BLUE_BIN:
+            createBlueBin()
+        case .BLUE_PLUS:
+            createBluePlus()
+        
+        }
+    }
+    
+    //MARK: - Create navigation bar item
+    func createBlueBin(){
+        let leftButton:UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_bin"), style: .plain, target: self, action: #selector(selfDelete))
+        leftButton.tintColor = COLOR_NAVIGATIONBAR_BUTTON
+        navigationItem.leftBarButtonItem = leftButton
+    }
+    
+    func createBluePlus(){
+        let rightButton: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_plus"), style: .plain, target: self, action: #selector(addNewChart))
+        rightButton.tintColor = COLOR_NAVIGATIONBAR_BUTTON
+        navigationItem.rightBarButtonItem = rightButton
+    }
+    
 	//MARK: - Objc function
 	@objc func selfClose() {
 		navigationController?.popViewController(animated: true)
 	}
+    
+    @objc func selfDelete(){
+        
+    }
+    
+    @objc func addNewChart(){
+        let dialog:GAddDataDialog = GAddDataDialog(nibName: GAddDataDialog.typeName, bundle: nil)
+        dialog.showDialog(completion: nil)
+        dialog.dismissCompletion = {
+            NotificationCenter.default.post(name: Notification.Name(rawValue: GNotifyCreateANewChart), object: nil)
+        }
+    }
 }

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,20 +59,58 @@
                             <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaJ-mR-WJK">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wa2-Wk-VD1" userLabel="Button View">
                             <rect key="frame" x="0.0" y="170" width="300" height="50"/>
-                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaJ-mR-WJK">
+                                    <rect key="frame" x="150" y="-0.5" width="150" height="50"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                    <color key="tintColor" red="0.0" green="0.45882352941176469" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="SHOW">
+                                        <color key="titleColor" red="0.14901960784313725" green="0.5" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionPressButtonShowChart:" destination="-1" eventType="touchUpInside" id="69x-pu-KZC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YME-uS-mzZ" userLabel="Cancel">
+                                    <rect key="frame" x="0.0" y="-0.5" width="150" height="50"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                    <color key="tintColor" red="0.0" green="0.45882352939999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="CANCEL">
+                                        <color key="titleColor" red="0.14901960780000001" green="0.5" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionPressButtonShowChart:" destination="-1" eventType="touchUpInside" id="LNd-m0-jpO"/>
+                                        <action selector="actionPressCancel:" destination="-1" eventType="touchUpInside" id="BYX-WH-y2l"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d67-EG-MH3" userLabel="Vertical Line">
+                                    <rect key="frame" x="149.5" y="0.0" width="1" height="50"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="6Wm-g6-KK1"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="6IP-Fk-m18"/>
+                                <constraint firstAttribute="height" constant="50" id="4Sr-4d-myt"/>
+                                <constraint firstItem="YME-uS-mzZ" firstAttribute="width" secondItem="Wa2-Wk-VD1" secondAttribute="width" multiplier="1:2" id="7sD-5g-Bj7"/>
+                                <constraint firstItem="jaJ-mR-WJK" firstAttribute="height" secondItem="Wa2-Wk-VD1" secondAttribute="height" id="DIH-bg-VqZ"/>
+                                <constraint firstItem="d67-EG-MH3" firstAttribute="top" secondItem="Wa2-Wk-VD1" secondAttribute="top" id="MFl-DG-I6l"/>
+                                <constraint firstItem="YME-uS-mzZ" firstAttribute="height" secondItem="Wa2-Wk-VD1" secondAttribute="height" id="QFr-Mc-bIK"/>
+                                <constraint firstItem="YME-uS-mzZ" firstAttribute="centerY" secondItem="Wa2-Wk-VD1" secondAttribute="centerY" id="Xb7-fn-43U"/>
+                                <constraint firstItem="d67-EG-MH3" firstAttribute="centerX" secondItem="Wa2-Wk-VD1" secondAttribute="centerX" id="Z6l-hy-6Yf"/>
+                                <constraint firstItem="jaJ-mR-WJK" firstAttribute="centerY" secondItem="Wa2-Wk-VD1" secondAttribute="centerY" id="hTj-fT-Y0a"/>
+                                <constraint firstItem="d67-EG-MH3" firstAttribute="height" secondItem="jaJ-mR-WJK" secondAttribute="height" id="kVx-fD-ObE"/>
+                                <constraint firstItem="jaJ-mR-WJK" firstAttribute="width" secondItem="Wa2-Wk-VD1" secondAttribute="width" multiplier="1:2" id="ldV-Hh-yYP"/>
+                                <constraint firstItem="YME-uS-mzZ" firstAttribute="leading" secondItem="Wa2-Wk-VD1" secondAttribute="leading" id="njB-Wj-iE6"/>
+                                <constraint firstAttribute="trailing" secondItem="jaJ-mR-WJK" secondAttribute="trailing" id="q3g-Y4-Hal"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
-                            <state key="normal" title="GIMME MY BODY CHART!">
-                                <color key="titleColor" red="0.14901960784313725" green="0.5" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="actionPressButtonShowChart:" destination="-1" eventType="touchUpInside" id="69x-pu-KZC"/>
-                            </connections>
-                        </button>
+                        </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your BFM..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bwZ-PS-fKv">
                             <rect key="frame" x="25.5" y="122" width="250" height="30"/>
                             <constraints>
@@ -82,7 +121,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjr-fB-neZ">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjr-fB-neZ" userLabel="Line">
                             <rect key="frame" x="0.0" y="169" width="300" height="1"/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -94,20 +133,20 @@
                     <constraints>
                         <constraint firstItem="fjr-fB-neZ" firstAttribute="centerX" secondItem="ZYX-GO-PBC" secondAttribute="centerX" id="0JX-6K-oon"/>
                         <constraint firstItem="k3k-Re-DMG" firstAttribute="centerX" secondItem="ZYX-GO-PBC" secondAttribute="centerX" id="5vg-3u-Da8"/>
+                        <constraint firstAttribute="bottom" secondItem="Wa2-Wk-VD1" secondAttribute="bottom" id="A1D-wQ-dki"/>
                         <constraint firstItem="fjr-fB-neZ" firstAttribute="width" secondItem="ZYX-GO-PBC" secondAttribute="width" id="Aiq-Me-aBz"/>
                         <constraint firstItem="qqL-Ka-i1L" firstAttribute="centerX" secondItem="ZYX-GO-PBC" secondAttribute="centerX" id="DWy-1k-N85"/>
                         <constraint firstItem="qqL-Ka-i1L" firstAttribute="top" secondItem="ZYX-GO-PBC" secondAttribute="top" constant="15" id="F8V-Us-fG2"/>
                         <constraint firstItem="bwZ-PS-fKv" firstAttribute="centerX" secondItem="ZYX-GO-PBC" secondAttribute="centerX" id="Hlu-Py-Yeb"/>
-                        <constraint firstItem="jaJ-mR-WJK" firstAttribute="top" secondItem="fjr-fB-neZ" secondAttribute="bottom" id="Me7-Yb-Aec"/>
-                        <constraint firstItem="jaJ-mR-WJK" firstAttribute="width" secondItem="ZYX-GO-PBC" secondAttribute="width" id="NwU-rX-fNa"/>
+                        <constraint firstItem="Wa2-Wk-VD1" firstAttribute="leading" secondItem="ZYX-GO-PBC" secondAttribute="leading" id="M1R-LR-lLx"/>
                         <constraint firstAttribute="width" constant="300" id="Q4Y-Bz-2zq"/>
                         <constraint firstItem="bwZ-PS-fKv" firstAttribute="top" secondItem="iJX-QJ-zAz" secondAttribute="bottom" constant="10" id="TW8-uv-QfS"/>
                         <constraint firstAttribute="height" constant="220" id="Uf8-qQ-vJN"/>
+                        <constraint firstItem="Wa2-Wk-VD1" firstAttribute="top" secondItem="fjr-fB-neZ" secondAttribute="bottom" id="bmO-Ml-Rt0"/>
                         <constraint firstItem="k3k-Re-DMG" firstAttribute="top" secondItem="qqL-Ka-i1L" secondAttribute="bottom" constant="10" id="dHK-kL-h6H"/>
                         <constraint firstItem="iJX-QJ-zAz" firstAttribute="top" secondItem="k3k-Re-DMG" secondAttribute="bottom" constant="10" id="fVL-zU-0PG"/>
                         <constraint firstItem="iJX-QJ-zAz" firstAttribute="centerX" secondItem="ZYX-GO-PBC" secondAttribute="centerX" id="gJ2-iL-H3s"/>
-                        <constraint firstItem="jaJ-mR-WJK" firstAttribute="centerX" secondItem="ZYX-GO-PBC" secondAttribute="centerX" id="l2p-g9-zSe"/>
-                        <constraint firstAttribute="bottom" secondItem="jaJ-mR-WJK" secondAttribute="bottom" id="vQa-T8-LOZ"/>
+                        <constraint firstItem="Wa2-Wk-VD1" firstAttribute="width" secondItem="ZYX-GO-PBC" secondAttribute="width" id="vn9-RA-tJr"/>
                     </constraints>
                 </view>
             </subviews>
