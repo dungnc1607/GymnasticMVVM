@@ -12,7 +12,7 @@ class GMainMenuView: GBaseView {
 	
 	@IBOutlet weak var tableView: UITableView!
 	
-	let menuList: [String] = ["Cardio","History","Report","Synchronize"]
+	let menuList: [String] = ["Cardio","Report","Synchronize"]
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,8 +55,6 @@ extension GMainMenuView: UITableViewDataSource, UITableViewDelegate {
 		switch menuIndex {
 		case .CARDIO:
 			self.vmNavigation?.openCardio()
-		case .HISTORY:
-			self.vmNavigation?.openHistory()
 		case .REPORT:
 			self.vmNavigation?.openReport()
 		case .SYNCHRONIZE:

@@ -10,22 +10,24 @@ import UIKit
 let SAVE_CHART_DATA = "save_data"
 extension UserDefaults{
     // MARK: - SAVE DATA
-    func saveChartData(_ time:String, _ weight:Double, _ SMM:Double, _ BFM:Double ){
-        var saveDataDict: [String: Any] = [:]
-        saveDataDict = getChartData()
-        let num = saveDataDict.count >= 1 ? saveDataDict.count  : 0
-        var myDict:[String:Any] = [:]
-        myDict = [
-            "chart\(num)":
-             [
-                "time": time,
-                "weight": weight,
-                "smm": SMM,
-                "bfm": BFM
-             ]
-        ] as [String:Any]
-        let combinedDict:[String: Any] = saveDataDict.merged(another: myDict)
-        self.set(combinedDict, forKey: SAVE_CHART_DATA)
+    func saveChartData(_ dict:[String:Any] ){
+//        var saveDataDict: [String: Any] = [:]
+//        saveDataDict = getChartData()
+//        let num = saveDataDict.count >= 1 ? saveDataDict.count  : 0
+//        var myDict:[String:Any] = [:]
+//        myDict = [
+//            "chart\(num)":
+//             [
+//                "time": time,
+//                "weight": weight,
+//                "smm": SMM,
+//                "bfm": BFM
+//             ]
+//        ] as [String:Any]
+//        let combinedDict:[String: Any] = saveDataDict.merged(another: myDict)
+//        self.set(combinedDict, forKey: SAVE_CHART_DATA)
+//        self.synchronize()
+        self.set(dict, forKey: SAVE_CHART_DATA)
         self.synchronize()
     }
     

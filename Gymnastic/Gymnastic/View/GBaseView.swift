@@ -96,7 +96,13 @@ class GBaseView: UIViewController, GNavigationVMProtocol {
         let dialog:GAddDataDialog = GAddDataDialog(nibName: GAddDataDialog.typeName, bundle: nil)
         dialog.showDialog(completion: nil)
         dialog.dismissCompletion = {
+            let vc:GReportView = GReportView(nibName: GReportView.typeName, bundle: nil)
+            vc.navigationButtonType = .BLUE_PLUS
+            self.navigationController?.pushViewController(vc, animated: false )
             NotificationCenter.default.post(name: Notification.Name(rawValue: GNotifyCreateANewChart), object: nil)
+            
         }
+        
+        
     }
 }

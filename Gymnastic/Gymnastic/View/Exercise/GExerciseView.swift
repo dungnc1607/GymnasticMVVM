@@ -89,44 +89,44 @@ extension GExerciseView: UITableViewDataSource, UITableViewDelegate{
         case .BARBELL:
             cell?.labelExerciseName.text = barbellExercise[indexPath.row]
             cell?.onPressCell = {
-                self.vmNavigation?.openDetail(self.barbell_ID[indexPath.row])
+                self.vmNavigation?.openDetail(self.barbell_ID[indexPath.row], (cell?.labelExerciseName.text)!)
             }
         case .DUMBELL:
             cell?.labelExerciseName.text = dumbbellExercise[indexPath.row]
             cell?.onPressCell = {
-                self.vmNavigation?.openDetail(self.dumbbell_ID[indexPath.row])
+                self.vmNavigation?.openDetail(self.dumbbell_ID[indexPath.row],(cell?.labelExerciseName.text)!)
             }
         case .CABLE:
             cell?.labelExerciseName.text = cableExercise[indexPath.row]
             cell?.onPressCell = {
-                self.vmNavigation?.openDetail(self.cable_ID[indexPath.row])
+                self.vmNavigation?.openDetail(self.cable_ID[indexPath.row],(cell?.labelExerciseName.text)!)
             }
         case .BAREHAND:
             cell?.labelExerciseName.text = barehandExercise[indexPath.row]
             cell?.onPressCell = {
-                self.vmNavigation?.openDetail(self.barehand_ID[indexPath.row])
+                self.vmNavigation?.openDetail(self.barehand_ID[indexPath.row],(cell?.labelExerciseName.text)!)
             }
         case .NONE:
             switch indexPath.section {
             case 0:
                 cell?.labelExerciseName.text = barbellExercise[indexPath.row]
                 cell?.onPressCell = {
-                    self.vmNavigation?.openDetail(self.barbell_ID[indexPath.row])
+                    self.vmNavigation?.openDetail(self.barbell_ID[indexPath.row],(cell?.labelExerciseName.text)!)
                 }
             case 1:
                 cell?.labelExerciseName.text = dumbbellExercise[indexPath.row]
                 cell?.onPressCell = {
-                    self.vmNavigation?.openDetail(self.dumbbell_ID[indexPath.row])
+                    self.vmNavigation?.openDetail(self.dumbbell_ID[indexPath.row],(cell?.labelExerciseName.text)!)
                 }
             case 2:
                 cell?.labelExerciseName.text = cableExercise[indexPath.row]
                 cell?.onPressCell = {
-                    self.vmNavigation?.openDetail(self.cable_ID[indexPath.row])
+                    self.vmNavigation?.openDetail(self.cable_ID[indexPath.row],(cell?.labelExerciseName.text)!)
                 }
             case 3:
                 cell?.labelExerciseName.text = barehandExercise[indexPath.row]
                 cell?.onPressCell = {
-                    self.vmNavigation?.openDetail(self.barehand_ID[indexPath.row])
+                    self.vmNavigation?.openDetail(self.barehand_ID[indexPath.row],(cell?.labelExerciseName.text)!)
                 }
             default:
                 break

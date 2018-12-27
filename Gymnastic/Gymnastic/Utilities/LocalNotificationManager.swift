@@ -23,8 +23,8 @@ class LocalNotificationManager: NSObject {
     
     func sendLocalNotification(){
         let content = UNMutableNotificationContent()
-        content.title = NSString.localizedUserNotificationString(forKey: "title", arguments: nil)
-        content.body = NSString.localizedUserNotificationString(forKey: "body", arguments: nil)
+        content.title = NSString.localizedUserNotificationString(forKey: "Vài Lời Nhắn Nhủ:", arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: "Chăm chỉ tập luyện - tránh xa rượu bia đi anh êi!!!", arguments: nil)
         content.sound = UNNotificationSound.default()
         //trigger push noti
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)

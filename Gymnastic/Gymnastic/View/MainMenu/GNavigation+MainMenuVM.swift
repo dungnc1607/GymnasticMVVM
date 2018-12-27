@@ -30,4 +30,6 @@ extension GNavigationVM {
 		let vc: GSynchronizeView = GSynchronizeView(nibName: GSynchronizeView.typeName, bundle: nil)
 		ownerView?.push(vc)
 	}
+    
+    
 }

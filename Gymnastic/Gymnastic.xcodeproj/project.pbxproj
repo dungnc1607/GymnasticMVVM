@@ -23,6 +23,11 @@
 		E63AC3A321339FA2005983A1 /* GExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AC3A121339FA2005983A1 /* GExerciseCell.swift */; };
 		E63AC3A421339FA2005983A1 /* GExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63AC3A221339FA2005983A1 /* GExerciseCell.xib */; };
 		E647DDD9214B5D0D00736D83 /* GUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E647DDD8214B5D0D00736D83 /* GUtility.swift */; };
+		E64D657621D383D300CA4CBB /* GCardioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D657421D383D300CA4CBB /* GCardioCell.swift */; };
+		E64D657721D383D300CA4CBB /* GCardioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64D657521D383D300CA4CBB /* GCardioCell.xib */; };
+		E64D657921D389D400CA4CBB /* GNavigation+CardioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D657821D389D400CA4CBB /* GNavigation+CardioView.swift */; };
+		E64D657C21D38AC000CA4CBB /* GCardioDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64D657A21D38AC000CA4CBB /* GCardioDetail.swift */; };
+		E64D657D21D38AC000CA4CBB /* GCardioDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64D657B21D38AC000CA4CBB /* GCardioDetail.xib */; };
 		E69F6492212FA82D00E7C167 /* GExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F6490212FA82D00E7C167 /* GExerciseView.swift */; };
 		E69F6493212FA82D00E7C167 /* GExerciseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E69F6491212FA82D00E7C167 /* GExerciseView.xib */; };
 		E69F6498212FAE9B00E7C167 /* GIndicatorTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69F6497212FAE9B00E7C167 /* GIndicatorTabView.swift */; };
@@ -90,6 +95,11 @@
 		E63AC3A121339FA2005983A1 /* GExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GExerciseCell.swift; sourceTree = "<group>"; };
 		E63AC3A221339FA2005983A1 /* GExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GExerciseCell.xib; sourceTree = "<group>"; };
 		E647DDD8214B5D0D00736D83 /* GUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUtility.swift; sourceTree = "<group>"; };
+		E64D657421D383D300CA4CBB /* GCardioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCardioCell.swift; sourceTree = "<group>"; };
+		E64D657521D383D300CA4CBB /* GCardioCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCardioCell.xib; sourceTree = "<group>"; };
+		E64D657821D389D400CA4CBB /* GNavigation+CardioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GNavigation+CardioView.swift"; sourceTree = "<group>"; };
+		E64D657A21D38AC000CA4CBB /* GCardioDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCardioDetail.swift; sourceTree = "<group>"; };
+		E64D657B21D38AC000CA4CBB /* GCardioDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GCardioDetail.xib; sourceTree = "<group>"; };
 		E69F6490212FA82D00E7C167 /* GExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GExerciseView.swift; sourceTree = "<group>"; };
 		E69F6491212FA82D00E7C167 /* GExerciseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GExerciseView.xib; sourceTree = "<group>"; };
 		E69F6497212FAE9B00E7C167 /* GIndicatorTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIndicatorTabView.swift; sourceTree = "<group>"; };
@@ -233,6 +243,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		E64D657321D3832000CA4CBB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E64D657421D383D300CA4CBB /* GCardioCell.swift */,
+				E64D657521D383D300CA4CBB /* GCardioCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E69F648F212FA78C00E7C167 /* Exercise */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,8 +311,12 @@
 		FE5EA22F212D3DC000501B9C /* Cardio */ = {
 			isa = PBXGroup;
 			children = (
+				E64D657321D3832000CA4CBB /* Cell */,
 				FE5EA23A212D3EEF00501B9C /* GCardioView.swift */,
 				FE5EA23B212D3EEF00501B9C /* GCardioView.xib */,
+				E64D657821D389D400CA4CBB /* GNavigation+CardioView.swift */,
+				E64D657A21D38AC000CA4CBB /* GCardioDetail.swift */,
+				E64D657B21D38AC000CA4CBB /* GCardioDetail.xib */,
 			);
 			path = Cardio;
 			sourceTree = "<group>";
@@ -522,8 +545,10 @@
 				FE5EA22D212D3DAE00501B9C /* GGymView.xib in Resources */,
 				E63AC3A421339FA2005983A1 /* GExerciseCell.xib in Resources */,
 				FED7BA88212C0A8E00DB9523 /* LaunchScreen.storyboard in Resources */,
+				E64D657D21D38AC000CA4CBB /* GCardioDetail.xib in Resources */,
 				E60502DA2133E79C00044FF0 /* GExerciseDetail.xib in Resources */,
 				FE5EA239212D3E0E00501B9C /* GReportView.xib in Resources */,
+				E64D657721D383D300CA4CBB /* GCardioCell.xib in Resources */,
 				FED7BA85212C0A8E00DB9523 /* Assets.xcassets in Resources */,
 				E601FBD8214BB3A600521DE3 /* GComboBoxCell.xib in Resources */,
 				FEB81F98212E619C00BCC78D /* GSynchronizeView.xib in Resources */,
@@ -606,6 +631,7 @@
 				FED7BAB7212C1AAE00DB9523 /* UIApplication.swift in Sources */,
 				E60502DC2133EC4000044FF0 /* GNavigation+ExerciseView.swift in Sources */,
 				FEB81F9C212E6ACD00BCC78D /* GGymCollectionCell.swift in Sources */,
+				E64D657921D389D400CA4CBB /* GNavigation+CardioView.swift in Sources */,
 				FED7BA93212C18F500DB9523 /* GBaseView.swift in Sources */,
 				FE5EA229212D3D3900501B9C /* GTabbarController.swift in Sources */,
 				FED7BAB0212C1AAE00DB9523 /* NSObject.swift in Sources */,
@@ -622,6 +648,7 @@
 				E69F649E212FC3CE00E7C167 /* GNavigation+GymView.swift in Sources */,
 				FED7BA99212C199300DB9523 /* GNavigationVM.swift in Sources */,
 				E6254CD0214F4D0200F5DE52 /* LocalNotificationManager.swift in Sources */,
+				E64D657621D383D300CA4CBB /* GCardioCell.swift in Sources */,
 				FED7BAAC212C1AAE00DB9523 /* UIView.swift in Sources */,
 				FED7BAAE212C1AAE00DB9523 /* UIColor.swift in Sources */,
 				FED7BA9D212C1A1F00DB9523 /* GIntrodutionView.swift in Sources */,
@@ -638,6 +665,7 @@
 				FE5EA238212D3E0E00501B9C /* GReportView.swift in Sources */,
 				E69F649C212FB0A200E7C167 /* GConstant.swift in Sources */,
 				FED7BAB5212C1AAE00DB9523 /* UIViewController.swift in Sources */,
+				E64D657C21D38AC000CA4CBB /* GCardioDetail.swift in Sources */,
 				E60D05222147BC0E00F33935 /* UserDefaults.swift in Sources */,
 				FE5EA23C212D3EEF00501B9C /* GCardioView.swift in Sources */,
 				FED7BAB6212C1AAE00DB9523 /* UIImageView.swift in Sources */,

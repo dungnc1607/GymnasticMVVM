@@ -67,4 +67,19 @@ let CORE_BAREHAND_ID: [String] = ["V4qhxtXLtaU", "Imui46JTe7s", "ANVdMDaYRts", "
 let CORE_CABLE: [String] = ["Ab Wheel Rollout", "Dip/Leg Raise Combo"]
 let CORE_CABLE_ID: [String] = ["PwqJTPsI6i0", "UGjlo6FTQTs"]
 
+let CARDIO_NAME:[String] = ["FULL BODY KICK", "INSANE CARDIO", "HIIT BURNER", "QUAD FLY"]
+
+let FULL_BODY_KICK:[String] = ["Burpees", "Push ups", "Squat Jump 180", "Crunches", "Jumping Jacks"]
+
+let FULL_BODY_REP:[String] = ["15","20","8","20","45s"]
+
+let INSANE_CARDIO:[String] = ["Mountain Climbers", "Squat Jump", "Jumping Jacks", "Burpees", "Rope Jump"]
+let INSANE_REP:[String] = ["45s", "15", "30s", "15", "20" ]
+
+let HIIT_BURNER:[String] = ["High Knees", "Squat Jump 180", "Half Burpees", "Diamond Push ups", "Mountain Climbers"]
+let HIIT_REP:[String] = ["30s", "15", "30s", "20", "40s"]
+
+let QUAD_FLY:[String] = ["Squats", "Wall Sit", "Vertical Jumps", "Alternating Lunges"]
+let QUAD_REP:[String] = ["30", "30s", "15", "20"]
+
 let COLOR_NAVIGATIONBAR_BUTTON: UIColor = UIColor.init(hex: "0075FB", alpha: 1.0)

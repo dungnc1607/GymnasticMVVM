@@ -26,4 +26,11 @@ class GUtility: NSObject{
         //let override it
         print("base function")
     }
+    
+    class func alertToUser(_ msg:String, _ vc:UIViewController){
+        let alert = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Got it", style: .cancel, handler: nil)
+        alert.addAction(okButton)
+        vc.present(alert, animated: true, completion: nil)
+    }
 }

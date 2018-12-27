@@ -10,7 +10,6 @@ import Foundation
 
 enum MENU_INDEX: Int {
 	case CARDIO
-	case HISTORY
 	case REPORT
 	case SYNCHRONIZE
 }

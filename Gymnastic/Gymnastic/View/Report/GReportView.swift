@@ -8,7 +8,7 @@
 
 import UIKit
 import Charts
-
+import UserNotifications
 class GReportView: GBaseView {
     @IBOutlet weak var heightOfDropDown: NSLayoutConstraint!
     
@@ -24,7 +24,9 @@ class GReportView: GBaseView {
     var smm:Double?
     var bfm:Double?
     var other:Double?
-    let inbodyDict = UserDefaults.standard.getChartData()
+    var inbodyDict = UserDefaults.standard.getChartData()
+    
+    
     var isOpen:Bool = false
     
     override func viewDidLoad() {
@@ -38,6 +40,16 @@ class GReportView: GBaseView {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         heightOfDropDown.constant = CGFloat(inbodyDict.count * 30)
+        LocalNotificationManager.shared.sendLocalNotification()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        print(inbodyDict)
+//        for i in 0...inbodyDict.count - 1 {
+//            
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,7 +71,7 @@ class GReportView: GBaseView {
         self.smmDataEntry.label = "SMM"
         
         self.bfmDataEntry.value = bfm
-        self.bfmDataEntry.label = "SMM"
+        self.bfmDataEntry.label = "BFM"
         
         self.otherDataEntry.value = other
         self.otherDataEntry.label = "Other"
@@ -94,6 +106,7 @@ class GReportView: GBaseView {
                 })
             }
         }
+        
     }
     
 }
@@ -124,9 +137,19 @@ extension GReportView:UITableViewDelegate, UITableViewDataSource{
         tableView.isHidden = true
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            inbodyDict.remove(at: inbodyDict.index(forKey: "chart\(indexPath.row)")!)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            UserDefaults.standard.saveChartData(inbodyDict)
+        }
+        
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 30
     }
 }
+
 
 

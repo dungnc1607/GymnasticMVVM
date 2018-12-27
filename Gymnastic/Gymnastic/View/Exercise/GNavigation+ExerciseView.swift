@@ -8,9 +8,10 @@
 
 import Foundation
 extension GNavigationVM{
-    func openDetail(_ id:String){
+    func openDetail(_ id:String, _ name:String){
         let vc: GExerciseDetail = GExerciseDetail(nibName: GExerciseDetail.typeName, bundle: nil)
         vc.youtubeID = id
+        vc.name = name
         ownerView?.push(vc)
     }
 }

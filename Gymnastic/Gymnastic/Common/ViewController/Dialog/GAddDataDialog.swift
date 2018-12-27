@@ -29,22 +29,35 @@ class GAddDataDialog: GBaseDialog {
     
     
     @IBAction func actionPressButtonShowChart(_ sender: Any) {
-        if textfieldWeight.text == "" || textfieldSMM.text == "" || textfieldBFM.text == "" {
-            //TODO: Push Notification ERROR!
-        }else{
-            let date = Date()
-            let calender = Calendar.current
-            let components = calender.dateComponents([.year,.month,.day], from: date)
-            let month = components.month
-            let day = components.day
-            let monthStr = month! < 10 ? "0\(month!)" : "\(month!)"
-            let dayStr = day! < 10 ? "0\(day!)" : "\(day!)"
-            let time = monthStr + "/" + dayStr
-            
-            
-            
-            UserDefaults.standard.saveChartData(time, (textfieldWeight.text?.toDouble())!, ((textfieldSMM.text)?.toDouble())!, ((textfieldBFM.text)?.toDouble())!)
+        if textfieldWeight.text == "" || textfieldSMM.text == "" || textfieldBFM.text == ""{
             self.dismiss()
+            GUtility.alertToUser("Còn ô bỏ trống kìa bố, nhập số liệu vào!!", self)
+        }else{
+            if let w = Double(textfieldWeight.text!), let smm = Double(textfieldSMM.text!), let bfm = Double(textfieldBFM.text!){
+                let date = Date()
+                let calender = Calendar.current
+                let components = calender.dateComponents([.year,.month,.day], from: date)
+                let month = components.month
+                let day = components.day
+                let monthStr = month! < 10 ? "0\(month!)" : "\(month!)"
+                let dayStr = day! < 10 ? "0\(day!)" : "\(day!)"
+                let time = monthStr + "/" + dayStr
+                
+                var myDict:[String:Any] = UserDefaults.standard.getChartData()
+                let num = myDict.count >= 1 ? myDict.count  : 0
+                myDict["chart\(num)"] = [
+                    "time": time,
+                    "weight": (textfieldWeight.text?.toDouble())!,
+                    "smm": ((textfieldSMM.text)?.toDouble())!,
+                    "bfm": ((textfieldBFM.text)?.toDouble())!
+                ]
+                UserDefaults.standard.saveChartData(myDict)
+                self.dismiss()
+            } else{
+                //TODO: Push Notification ERROR!
+                self.dismiss()
+               GUtility.alertToUser("Ơ đệt! nhập số cơ mà!??", self)
+            }
         }
     }
     @IBAction func actionPressCancel(_ sender: Any) {

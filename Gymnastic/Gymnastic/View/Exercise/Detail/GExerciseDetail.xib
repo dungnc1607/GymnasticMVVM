@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GExerciseDetail" customModule="Gymnastic" customModuleProvider="target">
             <connections>
+                <outlet property="labelExerciseName" destination="LC4-Fl-PqX" id="K90-N5-RNO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="youtubeView" destination="WU8-qR-2eE" id="Md1-9A-amT"/>
             </connections>
@@ -28,12 +29,20 @@
                         <constraint firstAttribute="height" constant="220" id="wD5-5h-dhq"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC4-Fl-PqX">
+                    <rect key="frame" x="165" y="290" width="44.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="WU8-qR-2eE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CU8-4N-DGY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WU8-qR-2eE" secondAttribute="trailing" id="OZy-lb-Hx2"/>
                 <constraint firstItem="WU8-qR-2eE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fCs-tX-tNy"/>
+                <constraint firstItem="LC4-Fl-PqX" firstAttribute="top" secondItem="WU8-qR-2eE" secondAttribute="bottom" constant="50" id="lH6-r3-QZG"/>
+                <constraint firstItem="LC4-Fl-PqX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pC9-ep-wcd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

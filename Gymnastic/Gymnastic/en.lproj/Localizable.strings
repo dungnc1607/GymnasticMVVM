@@ -10,3 +10,8 @@
 "GExerciseView" = "Exercise List";
 "GExerciseDetail" = "Details";
 "GReportView" = "Report";
+"GCardioView" = "Cardio";
+"GHistoryView" = "History";
+"GSynchronizeView" = "Synchronize";
+"GWorkoutView" = "Workout";
+"GCardioDetail" = "Cardio Detail";
